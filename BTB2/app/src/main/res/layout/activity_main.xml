@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:text="@string/hovaten" />
+
+        <EditText
+            android:id="@+id/eTHovaTen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:hint="@string/nguyenvana" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:text="@string/sodienthoai" />
+
+        <EditText
+            android:id="@+id/eTSoDienThoai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:hint="@string/_0987795436" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:text="@string/gioitinh" />
+
+        <Switch
+            android:id="@+id/swGioiTinh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:minHeight="48dp"
+            android:background="@drawable/vien"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:text="@string/trinhdo" />
+
+        <Spinner
+            android:id="@+id/spTrinhDo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48sp"
+            android:layout_weight="2"
+            android:contentDescription="@string/trinhdo"
+            android:background="@drawable/vien"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:text="@string/tuoi" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/_1" />
+
+        <SeekBar
+            android:id="@+id/sBTuoi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48sp"
+            android:background="@drawable/vien"
+            android:layout_weight="2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/_90" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:text="@string/thethao" />
+
+        <CheckBox
+            android:id="@+id/cBTheThao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:minHeight="48dp"
+            android:background="@drawable/vien"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:text="@string/theloaiamnhac" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/vien">
+
+            <RadioButton
+                android:id="@+id/rBRock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/rock" />
+            <RadioButton
+                android:id="@+id/rBRap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/rap" />
+            <RadioButton
+                android:id="@+id/rBPop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/pop" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iVRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/baseline_how_to_reg_24" />
+
+        <ImageView
+            android:id="@+id/iVCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/baseline_cancel_24" />
+    </LinearLayout>
+
+</LinearLayout>

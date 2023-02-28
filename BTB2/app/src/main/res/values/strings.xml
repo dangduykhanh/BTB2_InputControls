@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BTBuoi2_InputControls</string>
+    <string name="hovaten">Họ và Tên:</string>
+    <string name="nguyenvana">Nguyễn Văn A</string>
+    <string name="sodienthoai">Số Điện Thoại:</string>
+    <string name="_0987795436">0987795436</string>
+    <string name="gioitinh">Giới Tính:</string>
+    <string name="trinhdo">Trình Độ:</string>
+    <string name="tuoi">Tuổi:</string>
+    <string name="_90">90</string>
+    <string name="_1">1</string>
+    <string name="thethao">Thể Thao:</string>
+    <string name="theloaiamnhac">Thể Loại Âm Nhạc</string>
+    <string name="rock">Rock</string>
+    <string name="rap">Rap</string>
+    <string name="pop">Pop</string>
+    <string-array name="arrayTrinhDo">
+        <item>Cao Đẳng</item>
+        <item>Đại Học</item>
+        <item>Cao Học</item>
+    </string-array>
+</resources>
